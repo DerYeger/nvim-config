@@ -59,3 +59,16 @@ if exists('g:fvim_loaded')
 
   FVimUIPopupMenu v:false
 endif
+
+if exists('g:vscode')
+  let s:core_conf_files = [
+      \ 'globals.vim',
+      \ 'options.vim',
+      \ 'shared-mappings.vim',
+      \ 'vscode.vim',
+      \ ]
+
+  for s:fname in s:core_conf_files
+    execute printf('source %s/core/%s', stdpath('config'), s:fname)
+  endfor
+endif

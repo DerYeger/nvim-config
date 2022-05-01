@@ -12,6 +12,7 @@ let s:core_conf_files = [
       \ 'globals.vim',
       \ 'options.vim',
       \ 'autocommands.vim',
+      \ 'shared-mappings.vim',
       \ 'mappings.vim',
       \ 'plugins.vim',
       \ 'themes.vim'
