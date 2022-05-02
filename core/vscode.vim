@@ -13,4 +13,11 @@ xnoremap <silent> <C-h> :call VSCodeNotify('workbench.action.navigateLeft')<CR>
 nnoremap <silent> <C-l> :call VSCodeNotify('workbench.action.navigateRight')<CR>
 xnoremap <silent> <C-l> :call VSCodeNotify('workbench.action.navigateRight')<CR>
 
-nnoremap <silent> <leader><Space> :callVSCodeNotify('editor.action.trimTrailingWhitespace')<CR>
+nnoremap <silent> <leader><Space> :call VSCodeNotify('editor.action.trimTrailingWhitespace')<CR>
+
+nnoremap <silent> <Space>r :call VSCodeNotify('fileutils.renameFile')<CR>
+nnoremap <silent> <Space>m :call VSCodeNotify('fileutils.moveFile')<CR>
+nnoremap <silent> <Space>d :call VSCodeNotify('fileutils.removeFile')<CR>
+nnoremap <silent> <Space>n :call VSCodeNotify('fileutils.newFile')<CR>
+nnoremap <silent> <Space>nn :call VSCodeNotify('fileutils.newFolder')<CR>
+nnoremap <silent> <Space>c :call VSCodeNotify('fileutils.copyFileName')<CR>
