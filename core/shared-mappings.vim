@@ -15,7 +15,7 @@ nnoremap <expr> <leader>o printf('m`%so<ESC>``', v:count1)
 nnoremap <expr> <leader>O printf('m`%sO<ESC>``', v:count1)
 
 " Insert a space after current character
-nnoremap <leader><leader> a<Space><ESC>h
+nnoremap <leader><Space> a<Space><ESC>h
 
 " Move the cursor based on physical lines, not the actual lines.
 nnoremap <expr> j (v:count == 0 ? 'gj' : 'j')
@@ -86,3 +86,6 @@ function! s:restore_cursor() abort
   silent! normal `y
   silent! delmarks y
 endfunction
+
+nnoremap <leader>; $a;<Esc>
+nnoremap <leader>, $a,<Esc>;,
